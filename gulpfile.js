@@ -8,7 +8,7 @@ const env = {
   production_mode: false,
   path: {
     src: './src',
-    dest: './public'
+    dest: './docs'
   }
 }
 

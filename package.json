@@ -1,0 +1,37 @@
+{
+  "name": "markup-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for markup projects",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.23.7",
+    "del": "^3.0.0",
+    "flickity": "^2.1.2",
+    "flickity-fullscreen": "^1.1.0",
+    "gulp": "3.9.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-uglify": "^3.0.1",
+    "run-sequence": "^2.2.1",
+    "vinyl-buffer": "^1.0.1"
+  },
+  "devDependencies": {
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-copy": "^1.1.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,40 @@
+.btn-mandys-filled a {
+    border: 2px solid $mandys-pink;
+    padding: 13px 60px 13px 60px;
+    font-size: 17px;
+    font-family: $second-font;
+    border-radius: 50px;
+    text-decoration: none;
+    color: $mine-shaft;
+    transition: 0.2s all;
+    background: transparent;
+    
+    &:hover {
+        background: $mandys-pink;
+    }
+}
+.btn-mandys {
+    & a{
+    color:$mine-shaft;
+    background-color: $mandys-pink;
+    border: 1px solid $mandys-pink;
+    border-radius: 26px;
+    font-family: $second-font;
+    letter-spacing: 0.1em;
+    margin: 0 0 0 5px;
+    transition: 0.3s all;
+    cursor: pointer;
+    padding: 15px 25px 15px 25px;
+      
+    &:hover {
+        text-decoration: none;
+        color: $mine-shaft;
+        background: $Negroni;
+    }
+    
+    @include media('<desktop') {
+        margin: 0 auto;
+        text-align: center;
+      }
+}
+}

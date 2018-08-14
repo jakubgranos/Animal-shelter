@@ -1,0 +1,9 @@
+$breakpoints: (
+  phone: 320px,
+  tablet: 750px,
+  desktop: 1248px
+);
+$max-width: 1169px;
+@include media('<tablet') {}
+@include media('>=tablet', '<desktop') {}
+@include media('>=desktop') {}

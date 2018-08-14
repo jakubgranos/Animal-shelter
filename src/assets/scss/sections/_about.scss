@@ -1,0 +1,16 @@
+.page-about{
+  background:$alabaster;
+
+  @include media('<desktop') {
+    .col {
+      margin: 0 0 30px; 
+    }
+  }
+
+}
+
+.container {
+  &-wrapper {
+    padding: 89px 0 89px 0;
+  }
+}  

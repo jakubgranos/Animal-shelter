@@ -19,7 +19,6 @@
 }
 
 .hero-text {
-  padding: 150px 0 0 0;
   color: $white;
 
   @include media('<desktop') {
@@ -27,12 +26,10 @@
   }
 
   & h1 {
-    font-family: $second-font;
     margin: 0 0 0 5px;
   }
 
   & p {
-    font-family: 'Lato', sans-serif;
     padding: 33px 0 0 5px;
     margin: 0 0 50px;
     width: 40%;

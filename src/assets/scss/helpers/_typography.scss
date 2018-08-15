@@ -1,11 +1,13 @@
 p {
     margin: 0 0 20px;
+    font-family: 'Lato', sans-serif;
     line-height: 1.600em;
 }
 
 h1 {
     font-size: 44px;
     line-height: 1.2em;
+    font-family: $second-font;
 }
 
 h2 {

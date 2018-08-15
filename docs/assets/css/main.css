@@ -316,11 +316,13 @@ input[type="submit"] {
 
 p {
   margin: 0 0 20px;
+  font-family: 'Lato', sans-serif;
   line-height: 1.600em; }
 
 h1 {
   font-size: 44px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  font-family: Georgia; }
 
 h2 {
   font-size: 35px;
@@ -494,16 +496,13 @@ body {
     height: 100%; }
 
 .hero-text {
-  padding: 150px 0 0 0;
   color: #fff; }
   @media (max-width: 1247px) {
     .hero-text {
       text-align: center; } }
   .hero-text h1 {
-    font-family: Georgia;
     margin: 0 0 0 5px; }
   .hero-text p {
-    font-family: 'Lato', sans-serif;
     padding: 33px 0 0 5px;
     margin: 0 0 50px;
     width: 40%; }

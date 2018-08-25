@@ -1,6 +1,6 @@
 const carouselOptions = {
     draggable: false,
-    cellSelector: '.pet-element'
+    cellSelector: 'carousel-cell'
 };  
 
 function initCarousel(selector, options) {

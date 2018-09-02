@@ -1,11 +1,8 @@
-
 body {
-    font-family: $main-font;
+  font-family: $main-font;
 }
 
 .container {
-    margin: 0 auto;
-    
-    @include media('>desktop') {
-    }
+  margin: 0 auto;
+	
 }

@@ -361,13 +361,13 @@ body {
   color: #292929;
   background-color: #F1CDB3;
   border: 1px solid #F1CDB3;
-  border-radius: 26px;
+  border-radius: 30px;
   font-family: Georgia;
   letter-spacing: 0.1em;
   margin: 0 0 0 5px;
   transition: 0.3s all;
   cursor: pointer;
-  padding: 15px 25px 15px 25px; }
+  padding: 18px 44px 18px 44px; }
   .btn-mandys a:hover {
     text-decoration: none;
     color: #292929;
@@ -524,14 +524,16 @@ body {
   padding: 89px 0 89px 0; }
 
 .carousel-loop {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  text-align: center;
+  padding: 78px 0 68px 0; }
 
 .carousel-cell {
   width: 270px;
   height: 424px;
   border-radius: 9px;
   background: #fafafa;
-  margin: 0 25px 0 25px;
+  margin: 66px 40px 66px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -543,6 +545,22 @@ body {
 .flickity-button {
   border: 2px solid #F1CDB3;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  background: #ffffff00; }
   .flickity-button:hover {
     background: #F1CDB3; }
+
+.flickity-prev-next-button.next {
+  background: #F1CDB3; }
+
+.flickity-slider {
+  width: 1078px; }
+  @media (max-width: 1247px) {
+    .flickity-slider {
+      width: 100%; } }
+
+.flickity-viewport {
+  width: 1018px; }
+  @media (max-width: 1247px) {
+    .flickity-viewport {
+      width: 100%; } }

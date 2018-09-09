@@ -1,0 +1,29 @@
+.donation {
+  background:$alabaster;
+  text-align: center;
+    
+  & h2 {
+    padding:  72px 0 0 0;
+  }
+
+  &-square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-item {
+
+    margin: 40px 50px 40px 50px;
+    
+    & img {
+      width: 65px;
+      height: 65px;
+    }
+    
+    & p {
+      font-size: 20px;
+      margin: 28px 0 0 0;
+    }
+  }
+}

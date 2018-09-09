@@ -523,6 +523,24 @@ body {
 .container-wrapper {
   padding: 89px 0 89px 0; }
 
+.donation {
+  background: #fafafa;
+  text-align: center; }
+  .donation h2 {
+    padding: 72px 0 0 0; }
+  .donation-square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .donation-item {
+    margin: 40px 50px 40px 50px; }
+    .donation-item img {
+      width: 65px;
+      height: 65px; }
+    .donation-item p {
+      font-size: 20px;
+      margin: 28px 0 0 0; }
+
 .carousel-loop {
   background: #f6f6f6;
   text-align: center;

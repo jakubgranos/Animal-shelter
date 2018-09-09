@@ -560,7 +560,8 @@ body {
       width: 100%; } }
 
 .flickity-viewport {
-  width: 1018px; }
+  margin: 0 auto;
+  width: 1086px; }
   @media (max-width: 1247px) {
     .flickity-viewport {
       width: 100%; } }

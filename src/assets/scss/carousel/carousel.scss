@@ -33,14 +33,15 @@
 }
 .flickity-slider {
   width: 1078px;
+  
 
   @include media('<desktop') {
     width: 100%;
   }
 }
 .flickity-viewport {
-  width: 1018px;
-
+  margin: 0 auto;
+  width: 1086px;
   @include media('<desktop') {
     width: 100%;
   }

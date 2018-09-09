@@ -1,5 +1,7 @@
 const carouselOptions = {
-  groupCells: 3,
+  groupCells: 1,
+  initialIndex: 1,
+  draggable: false,
   pageDots: false,
   arrowShape: { 
     x0: 20,

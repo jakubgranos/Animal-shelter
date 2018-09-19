@@ -1,0 +1,62 @@
+.page-bank-account {
+  background:$alabaster;
+  
+  @include media('<desktop') {
+    .col {
+      margin: 0 0 30px; 
+      text-align: center
+    }
+  }
+
+}
+  
+.container {
+  &-wrapper {
+    padding: 89px 0 89px 0;
+  }
+
+  & img { 
+    @include media('<tablet') {
+  	  width: 286px;
+    }
+  }
+}  
+
+.contact-account {
+  width: 319px;
+  height: 47px;
+	background: $mandys-pink;
+	border-radius: 9px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	
+	& img {
+		width: 30px;
+		height: 24px;
+	}
+
+	& p {
+		font-size: 18px;
+		padding: 0;
+    margin: 0;
+	}
+}
+
+.legal-therms {
+	padding: 33px 0 0 0;
+	color: #b2b2b2;
+	font-size: 12px;
+	width: 351px;
+}
+
+@include media('<desktop') { 
+	.legal-therms, .contact-account, {
+		margin:  0 auto;
+		width: 90%;
+
+		& p {
+			font-size: 13px;
+		}
+	}
+}

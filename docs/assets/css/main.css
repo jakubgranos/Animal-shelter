@@ -404,6 +404,30 @@ body {
     letter-spacing: 1.3px;
     font-size: 14px; }
 
+.page-footer {
+  background-image: url("../images/footer-bgd.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 362px;
+  display: flex;
+  align-items: center; }
+  .page-footer h2 {
+    color: white; }
+  .page-footer p {
+    color: #F1CDB3; }
+  .page-footer img {
+    width: 35px;
+    margin: 0 22px 0 0; }
+
+@media (max-width: 1247px) {
+  .page-footer {
+    text-align: center;
+    height: auto; }
+  h2 {
+    margin: 20px 0 20px 0; } }
+
 .nav ul {
   display: flex;
   justify-content: center;
@@ -518,10 +542,14 @@ body {
   background: #fafafa; }
   @media (max-width: 1247px) {
     .page-about .col {
-      margin: 0 0 30px; } }
+      margin: 0 0 30px;
+      text-align: center; } }
 
 .container-wrapper {
   padding: 89px 0 89px 0; }
+  @media (max-width: 1247px) {
+    .container-wrapper img {
+      width: 250px; } }
 
 .page-bank-account {
   background: #fafafa; }
@@ -529,13 +557,12 @@ body {
     .page-bank-account .col {
       margin: 0 0 30px;
       text-align: center; } }
+  @media (max-width: 749px) {
+    .page-bank-account img {
+      width: 286px; } }
 
 .container-wrapper {
   padding: 89px 0 89px 0; }
-
-@media (max-width: 749px) {
-  .container img {
-    width: 286px; } }
 
 .contact-account {
   width: 319px;

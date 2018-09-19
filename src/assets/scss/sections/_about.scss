@@ -4,6 +4,7 @@
   @include media('<desktop') {
     .col {
       margin: 0 0 30px; 
+      text-align: center;
     }
   }
 
@@ -12,5 +13,11 @@
 .container {
   &-wrapper {
     padding: 89px 0 89px 0;
+    
+    @include media('<desktop') { 
+      & img {
+        width: 250px;
+      }
+    }
   }
 }  

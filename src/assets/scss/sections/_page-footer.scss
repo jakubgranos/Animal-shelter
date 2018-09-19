@@ -1,0 +1,34 @@
+.page-footer {
+  background-image: url("../images/footer-bgd.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+	height: 362px;
+	display: flex;
+	align-items: center;
+
+  & h2 {
+  	color: white;
+	}
+	
+  & p {
+  	color: $mandys-pink;
+	}
+	
+  & img {
+		width: 35px;
+    margin: 0 22px 0 0;
+  }
+}
+
+@include media('<desktop') { 
+	.page-footer {
+		text-align: center;
+		height:auto;
+	}
+
+	h2 {
+		margin: 20px 0 20px 0;
+	}
+}

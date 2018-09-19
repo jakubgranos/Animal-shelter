@@ -8,17 +8,16 @@
     }
   }
 
+	& img { 
+    @include media('<tablet') {
+  	  width: 286px;
+    }
+  }
 }
   
 .container {
   &-wrapper {
     padding: 89px 0 89px 0;
-  }
-
-  & img { 
-    @include media('<tablet') {
-  	  width: 286px;
-    }
   }
 }  
 

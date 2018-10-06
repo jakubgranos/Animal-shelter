@@ -428,83 +428,60 @@ body {
   h2 {
     margin: 20px 0 20px 0; } }
 
-.nav ul {
+.sidenav {
   display: flex;
   justify-content: center;
   align-items: center; }
   @media (max-width: 1247px) {
-    .nav ul {
-      flex-direction: column; } }
-  @media (min-width: 1248px) {
-    .nav ul {
-      flex-direction: row;
-      margin: 22px 13px 0 0; } }
-
-.nav li {
-  list-style-type: none;
-  padding: 0 0 0 33px;
-  font-size: 27px;
-  height: 30px; }
-  @media (min-width: 1248px) {
-    .nav li {
-      font-size: 15px; } }
-  @media (max-width: 1247px) {
-    .nav li {
-      padding: 28px 33px; } }
-
-.nav li:nth-child(1) {
-  margin: 64px 10px;
-  padding: 0px;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -ms-transition: -ms-transform 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-  @media (max-width: 1247px) {
-    .nav li:nth-child(1) {
-      display: block; } }
-  @media (min-width: 1248px) {
-    .nav li:nth-child(1) {
-      display: none; } }
-
-.nav a {
-  color: #b4b4b4;
-  transition: 0.2s all;
-  border-bottom: 3px solid transparent; }
-  .nav a:hover {
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 3px solid #F1CDB3; }
-
-.sidenav {
-  overflow: hidden; }
-  @media (max-width: 1247px) {
     .sidenav {
-      width: 0;
+      flex-direction: column;
+      transition: -webkit-transform 300ms;
+      transform: translate(-100%);
       height: 100%;
+      width: 100%;
       position: fixed;
-      z-index: 1;
       top: 0;
       left: 0;
       background-color: #2e2522;
-      overflow-x: hidden;
       transition: 0.5s;
       padding: 0; } }
+  @media (min-width: 1248px) {
+    .sidenav {
+      flex-direction: row;
+      margin: 22px 13px 0 0; } }
+  .sidenav li {
+    list-style-type: none;
+    padding: 0 0 0 33px;
+    font-size: 27px;
+    height: 30px; }
+    @media (min-width: 1248px) {
+      .sidenav li {
+        font-size: 15px; } }
+    @media (max-width: 1247px) {
+      .sidenav li {
+        padding: 28px 33px; } }
+  .sidenav a {
+    color: #b4b4b4;
+    transition: 0.2s all;
+    border-bottom: 3px solid transparent; }
+    .sidenav a:hover {
+      text-decoration: none;
+      color: #fff;
+      border-bottom: 3px solid #F1CDB3;
+      cursor: pointer; }
 
-.closebtn, .openbtn {
+.nav.clicked .sidenav {
+  -webkit-transform: translate(0%);
+  transform: translate(0%); }
+
+.openbtn {
   color: white;
   cursor: pointer;
+  z-index: 1;
   font-size: 35px; }
   @media (min-width: 1248px) {
-    .closebtn, .openbtn {
+    .openbtn {
       display: none; } }
-
-@media (max-width: 1247px) {
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px; } }
 
 .hero {
   background-image: url("../images/bg-hero-dog.jpg");

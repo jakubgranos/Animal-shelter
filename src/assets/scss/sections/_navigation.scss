@@ -1,18 +1,25 @@
-.nav {
-  & ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sidenav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @include media('<desktop') {
-      flex-direction: column;
-    }
+  @include media('<desktop') {
+    flex-direction: column;
+    transition: -webkit-transform 300ms;
+    transform: translate(-100%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2e2522;
+    transition: 0.5s;
+    padding: 0;
+  }
 
-    @include media('>=desktop') {
-      flex-direction: row;
-      margin: 22px 13px 0 0;
-    }
-
+  @include media('>=desktop') {
+    flex-direction: row;
+    margin: 22px 13px 0 0;
   }
 
   & li {
@@ -29,24 +36,6 @@
       padding: 28px 33px;
     }
   }
-
-  & li:nth-child(1) {
-    margin: 64px 10px;
-    padding: 0px;
-    cursor: pointer;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    -ms-transition: -ms-transform 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  
-    @include media('<desktop') {
-      display: block;
-    }
-
-    @include media('>=desktop') {
-      display: none;
-    }
-  }
-
   & a {
     color: #b4b4b4;
     transition: 0.2s all;
@@ -56,43 +45,23 @@
       text-decoration: none;
       color: $white;
       border-bottom: 3px solid $mandys-pink;
+      cursor: pointer;
     }
   }
 }
 
-.sidenav {
-  overflow: hidden;
-
-  @include media('<desktop') {
-    width: 0;
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2e2522;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding: 0;
-  }
+.nav.clicked .sidenav {
+  -webkit-transform: translate(0%);
+  transform: translate(0%);
 }
 
-.closebtn,.openbtn {
+.openbtn {
   color: white;
   cursor: pointer;
+  z-index: 1;
   font-size: 35px;
-
   @include media('>=desktop') {
     display: none;
   }
 }
 
-.sidenav .closebtn {
-  @include media('<desktop') {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-}

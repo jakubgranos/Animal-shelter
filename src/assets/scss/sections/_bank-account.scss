@@ -52,7 +52,6 @@
 @include media('<desktop') { 
 	.legal-therms, .contact-account, {
 		margin:  0 auto;
-		width: 90%;
 
 		& p {
 			font-size: 13px;

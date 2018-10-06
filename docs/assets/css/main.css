@@ -565,8 +565,7 @@ body {
 
 @media (max-width: 1247px) {
   .legal-therms, .contact-account {
-    margin: 0 auto;
-    width: 90%; }
+    margin: 0 auto; }
     .legal-therms p, .contact-account p {
       font-size: 13px; } }
 

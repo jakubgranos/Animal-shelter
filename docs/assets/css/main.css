@@ -565,9 +565,11 @@ body {
 
 @media (max-width: 1247px) {
   .legal-therms, .contact-account {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: auto; }
     .legal-therms p, .contact-account p {
-      font-size: 13px; } }
+      font-size: 13px;
+      padding: 0 10px 0 10px; } }
 
 .donation {
   background: #fafafa;
